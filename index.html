@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Traça Livros</title>
+
+    <style>
+        body {
+            background-color: #f8f5fc;
+        }
+
+        .bg-roxo {
+            background-color: #5e2b97;
+        }
+
+        .text-roxo {
+            color: #5e2b97;
+        }
+
+        .btn-laranja {
+            background-color: #ff7a00;
+            color: white;
+        }
+
+        .btn-laranja:hover {
+            background-color: #e66900;
+            color: white;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar bg-roxo navbar-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">📚Traça & Livros</span>
+        </div>
+    </nav>
+
+    <!-- ===== CARROSSEL ===== -->
+    <div id="carouselLivros" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Traça-livros.png" class="d-block w-100" alt="Traça-livros">
+            </div>
+            <div class="carousel-item">
+                <img src="/livraria.jpg" class="d-block w-100" alt="livraria">
+            </div>
+            <div class="carousel-item">
+                <img src="/livrarria2.jpg" class="d-block w-100" alt="Livraria 2">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLivros" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLivros" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- ===== SEÇÃO DE LIVROS ===== -->
+    <div class="container my-5">
+        <h2 class="text-center text-roxo mb-4">Nossos Destaques</h2>
+
+        <div class="row">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/400/300?fantasy" class="card-img-top" alt="Fantasia">
+                    <div class="card-body">
+                        <h5 class="card-title text-roxo">Reino das Sombras</h5>
+                        <p class="card-text">Uma aventura épica repleta de magia, mistérios e batalhas inesquecíveis.</p>
+                        <a href="#" class="btn btn-laranja">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="/quarta asa.jpg" class="card-img-top" alt="Romance">
+                    <div class="card-body">
+                        <h5 class="card-title text-roxo">Quarta asa</h5>
+                        <p class="card-text">é um romantasy de fantasia com dragões que acompanha Violet Sorrengail, uma jovem forçada por sua mãe general a ingressar na brutal Escola de Guerra Basgiath para se tornar uma cavaleira de dragões.</p>
+                        <a href="#" class="btn btn-laranja">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="/Se pudesse contar as estrlas.jpg" class="card-img-top" alt="livro">
+                    <div class="card-body">
+                        <h5 class="card-title text-roxo">Se pudesse contar as estralas</h5>
+                        <p class="card-text"> uma fantasia cristã inspirada em Peter Pan que segue Alison, uma menina de 9 anos que desperta sem memórias na Terra do Nunca, um refúgio para quem nunca nasceu. Ao descobrir segredos perigosos daquele mundo mágico, ela questiona sua existência e precisa de coragem para encontrar seu próprio destino</p>
+                        <a href="#" class="btn btn-laranja">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="/orgulho e preconceito.jpg" class="card-img-top" alt="Orgulho e Preconceito">
+                    <div class="card-body">
+                        <h5 class="card-title text-roxo">Orgulho e Preconceito</h5>
+                        <p class="card-text">Narra a história de Elizabeth Bennet, uma jovem espirituosa que enfrenta pressões sociais para casar-se no interior da Inglaterra. Ela desenvolve um intenso preconceito contra o rico e arrogante Sr. Darcy, enquanto sua irmã, Jane, se envolve com o Sr. Bingley. O romance aborda com ironia as convenções de classe, orgulho e amor.</p>
+                        <a href="#" class="btn btn-laranja">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="a lamina.jpg" class="card-img-top" alt="livro">
+                    <div class="card-body">
+                        <h5 class="card-title text-roxo">A Lâmina Mais Cortante</h5>
+                        <p class="card-text">é uma fantasia cristã que acompanha Anelise Ward, uma escritora londrina transportada através de um portal em seu quarto para o reino mágico de Endemör. Lá, ela precisa usar seu talento para contar histórias para distrair um rei tirano enquanto os rebeldes lutam, enfrentando seus medos.</p>
+                        <a href="#" class="btn btn-laranja">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="/no coração da floresta.jpg" class="card-img-top" alt="livro">
+                    <div class="card-body">
+                        <h5 class="card-title text-roxo">No Coração da Floresta</h5>
+                        <p class="card-text">história de Carey, uma jovem de 15 anos que vive isolada em um trailer na floresta, cuidando de sua irmã mais nova, Jenessa, após o abandono da mãe mentalmente instável. Quando dois estranhos as resgatam, Carey precisa enfrentar os traumas de um passado sombrio e os segredos que esconde de sua nova vida</p>
+                        <a href="#" class="btn btn-laranja">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-roxo text-white text-center p-3">
+        © 2026 Livraria Roxo & Laranja - Todos os direitos reservados
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
