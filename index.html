@@ -3,209 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Traça Livros</title>
 
     <style>
-        body {
-            background-color: #f8f5fc;
-        }
 
-        .bg-roxo {
-            background-color: #5e2b97;
-        }
+body{
+    background-color:#f8f5fc;
+}
 
-        .text-roxo {
-            color: #5e2b97;
-        }
+.bg-roxo{
+    background-color:#5e2b97;
+}
 
-        .btn-laranja {
-            background-color: #ff7a00;
-            color: white;
-        }
+.text-roxo{
+    color:#5e2b97;
+}
 
-        .btn-laranja:hover {
-            background-color: #e66900;
-            color: white;
-        }
+.btn-laranja{
+    background:#ff7a00;
+    color:white;
+    border:none;
+}
 
-        .card {
-            border: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+.btn-laranja:hover{
+    background:#e66900;
+    color:white;
+}
+
+.navbar{
+    padding:18px;
+}
+.carousel-item img {
+    height: 600px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.navbar-nav {
+    font-size: 6px; 
+    font-weight: bold; 
+}
+
+.linha-roxa {
+    border: none;
+    height:3px;
+    width:120px;
+    background-color: purple;
+    margin:20px auto 40px auto;
+    border-radius:5px;
+}
+
+</style>
     </style>
 </head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar bg-roxo navbar-dark">
+    <nav class="navbar navbar-dark bg-roxo">
         <div class="container">
-            <span class="navbar-brand mb-0 h1">📚Traça & Livros</span>
+            <span class="navbar-brand mb-0 h1 fw-bold mx-auto fs-2">📚Traça & Livros</span>
         </div>
     </nav>
 
-    <!-- ===== CARROSSEL ===== -->
-    <div id="carouselLivros" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Traça-livros.png" class="d-block w-100" alt="Traça-livros">
+        <div id="carouselLivros" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/Traça-livros.png" class="d-block w-100">
             </div>
             <div class="carousel-item">
-                <img src="/livraria.jpg" class="d-block w-100" alt="livraria">
+                <img src="imagens/livraria.jpg" class="d-block w-100">
             </div>
             <div class="carousel-item">
-                <img src="/livrarria2.jpg" class="d-block w-100" alt="Livraria 2">
+                <img src="/imagens/livrarria2.jpg" class="d-block w-100">
             </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLivros" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselLivros" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLivros" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselLivros" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
     </div>
 
-    <!-- ===== SEÇÃO DE LIVROS ===== -->
-    <div class="container my-5">
-        <h2 class="text-center text-roxo mb-4">Nossos Destaques</h2>
 
-        <div class="row">
+    <section class="container my-5">
+        <h2 class="text-center text-roxo mb-5">
+            Nossos Destaques
+        </h2>
+        <hr class="linha-roxa">
 
-            <!-- CARD 1 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+<!-- Livro 1 -->
+    <div class="container mt-4">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="" class="card-img-top" alt="Fantasia">
-                    <div class="card-body">
-                        <h5 class="card-title text-roxo">Reino das Sombras</h5>
-                        <p class="card-text">Uma aventura épica repleta de magia, mistérios e batalhas inesquecíveis.</p>
-                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
+                    <img src="/imagens/">
+                        <div class="card-body">
+                            <h5 class="title-roxo">O Labirinto do Fauno</h5>
+                                <p class="text-grow">
+                                    A menina Ofélia descobre um labirinto antigo e um fauno que revela
+                                    seu verdadeiro destino em um mundo mágico e perigoso.
+                                </p>
+                                <button class="btn btn-laranja w-100" onclick="selecionarLivro('O Labirinto do Fauno')">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Livro 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="/imagens/quarta asa.jpg">
+                    <div class="card-body ">
+                        <h5 class="title-roxo">Quarta Asa</h5>
+                        <p class="text-grow">
+                            Violet é forçada a entrar na brutal escola de cavaleiros de dragões,
+                            onde apenas os mais fortes sobrevivem.
+                        </p>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">
+                        Comprar
+                    </button>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+<!-- Livro 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="/quarta asa.jpg" class="card-img-top" alt="Romance">
+                    <img src="/imagens/Se pudesse contar as estrlas.jpg">
                     <div class="card-body">
-                        <h5 class="card-title text-roxo">Quarta asa</h5>
-                        <p class="card-text">é um romantasy de fantasia com dragões que acompanha Violet Sorrengail, uma jovem forçada por sua mãe general a ingressar na brutal Escola de Guerra Basgiath para se tornar uma cavaleira de dragões.</p>
-                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
+                        <h5 class="title-roxo">Se Pudesse Contar as Estrelas</h5>
+                        <p class="text-grow">
+                            Uma fantasia inspirada em Peter Pan onde uma menina acorda na Terra
+                            do Nunca e precisa descobrir seu destino.
+                        </p>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Se Pudesse Contar as Estrelas')">
+                        Comprar
+                    </button>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+<!-- Livro 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="/Se pudesse contar as estrlas.jpg" class="card-img-top" alt="livro">
+                    <img src="/imagens/orgulho e preconceito.jpg">
                     <div class="card-body">
-                        <h5 class="card-title text-roxo">Se pudesse contar as estralas</h5>
-                        <p class="card-text"> uma fantasia cristã inspirada em Peter Pan que segue Alison, uma menina de 9 anos que desperta sem memórias na Terra do Nunca, um refúgio para quem nunca nasceu. Ao descobrir segredos perigosos daquele mundo mágico, ela questiona sua existência e precisa de coragem para encontrar seu próprio destino</p>
-                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
+                        <h5 class="title-roxo">Orgulho e Preconceito</h5>
+                        <p class="text-grow">
+                            Elizabeth Bennet enfrenta as pressões sociais do casamento
+                            enquanto aprende a compreender o misterioso Sr. Darcy.
+                        </p>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Orgulho e Preconceito')">
+                            Comprar
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+<!-- Livro 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="/orgulho e preconceito.jpg" class="card-img-top" alt="Orgulho e Preconceito">
+                    <img src="/imagens/a lamina.jpg">
                     <div class="card-body">
-                        <h5 class="card-title text-roxo">Orgulho e Preconceito</h5>
-                        <p class="card-text">Narra a história de Elizabeth Bennet, uma jovem espirituosa que enfrenta pressões sociais para casar-se no interior da Inglaterra. Ela desenvolve um intenso preconceito contra o rico e arrogante Sr. Darcy, enquanto sua irmã, Jane, se envolve com o Sr. Bingley. O romance aborda com ironia as convenções de classe, orgulho e amor.</p>
-                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
+                        <h5 class="title-roxo">A Lâmina Mais Cortante</h5>
+                        <p class="text-grow">
+                            Uma escritora é transportada para um reino mágico e precisa usar
+                            histórias para enfrentar um rei tirano.
+                        </p>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('A Lâmina Mais Cortante')">
+                            Comprar
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 5 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+<!-- livro 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100">
-                    <img src="a lamina.jpg" class="card-img-top" alt="livro">
+                    <img src="/imagens/no coração da floresta.jpg">
                     <div class="card-body">
-                        <h5 class="card-title text-roxo">A Lâmina Mais Cortante</h5>
-                        <p class="card-text">é uma fantasia cristã que acompanha Anelise Ward, uma escritora londrina transportada através de um portal em seu quarto para o reino mágico de Endemör. Lá, ela precisa usar seu talento para contar histórias para distrair um rei tirano enquanto os rebeldes lutam, enfrentando seus medos.</p>
-                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
+                        <h5 class="title-roxo">No Coração da Floresta</h5>
+                        <p class="text-grow">
+                            Carey vive isolada na floresta até ser resgatada e precisar
+                            enfrentar os segredos de seu passado.
+                        </p>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('No Coração da Floresta')">
+                            Comprar
+                        </button>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- CARD 6 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="/no coração da floresta.jpg" class="card-img-top" alt="livro">
-                    <div class="card-body">
-                        <h5 class="card-title text-roxo">No Coração da Floresta</h5>
-                        <p class="card-text">história de Carey, uma jovem de 15 anos que vive isolada em um trailer na floresta, cuidando de sua irmã mais nova, Jenessa, após o abandono da mãe mentalmente instável. Quando dois estranhos as resgatam, Carey precisa enfrentar os traumas de um passado sombrio e os segredos que esconde de sua nova vida</p>
-                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
-                    </div>
-                </div>
-            </div>
-
-
-    <!-- FORMULÁRIO -->
-        <section class="container form-section">
+<!-- FORMULÁRIO -->
+        <hr class="linha-roxa">
+        <section class="container mb-5">
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="card form-card p-4">
-                        <h4 class="text-center text-roxo mb-4">Cadastro para compra</h4>
+                <div class="col-12 col-md-8 col-lg-6">
+                <div class="card form-card p-4">
+                    <h4 class="text-center text-roxo mb-4">Cadastro para compra</h4>
                         <form id="formCadastro">
                             <div class="mb-3">
                                 <label class="form-label">Nome</label>
-                                <input type="text" id="nome" class="form-control" oninput="validarFormulario()">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">E-mail</label>
-                                <input type="email" id="email" class="form-control" oninput="validarFormulario()">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Telefone</label>
-                                <input type="text" id="telefone" class="form-control" oninput="validarFormulario()">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Livro escolhido</label>
-                                <input type="text" id="livro" class="form-control" readonly>
-                            </div>
-                            <button id="botaoEnviar" class="btn btn-laranja w-100" disabled>Enviar</button>
-                            <footer class="bg-roxo text-white text-center p-3">
-                                © 2026 Livraria Roxo & Laranja - Todos os direitos reservados
-                            </footer>
-                            </div>
-                        </form>
-                        <footer class="bg-roxo text-white text-center p-4 mt-5">
-                            <p class="mb-1 fw-bold">Siga nosso instagram📚@Traçalivros </p>
-                            <p class="mb-1">Sua livraria de fantasia, romance e aventura</p>
-                            <small>© 2026 Livraria & Traça - Todos os direitos reservados</small>
-                        </footer>
+                                    <input type="text" id="nome" class="form-control" oninput="validarFormulario()">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="email" id="email" class="form-control" oninput="validarFormulario()">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Telefone</label>
+                                    <input type="text" id="telefone" class="form-control" oninput="validarFormulario()">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Livro escolhido</label>
+                                    <input type="text" id="livro" class="form-control" readonly>
+                                </div>
+                                <button id="botaoEnviar" class="btn btn-laranja w-100" disabled>Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="bg-roxo text-white text-center p-4 mt-5">
+                <p class="mb-1 fw-bold">Siga nosso instagram📚@Traçalivros </p>
+                <p class="mb-1">Sua livraria de fantasia, romance e aventura</p>
+                <small>© 2026 Livraria & Traça - Todos os direitos reservados</small>
+            </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
 
-        <script>
-    
-    function selecionarLivro(nomeLivro){
-        document.getElementById("livro").value = nomeLivro;
-        window.scrollTo({
-            top:document.getElementById("formCadastro").offsetTop,behavior:"smooth"
-        });
-    }
-    
     function validarFormulario(){
-        let nome = document.getElementById("nome").value;
-        let email = document.getElementById("email").value;
-        let telefone = document.getElementById("telefone").value;
-        let botao = document.getElementById("botaoEnviar");
-        if(nome !== "" && email !== "" && telefone !== ""){
-            botao.disabled = false;
-        }else{
-            botao.disabled = true;
-        }
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let telefone = document.getElementById("telefone").value;
+    let livro = document.getElementById("livro").value;
+    let botao = document.getElementById("botaoEnviar");
+
+    if(nome && email && telefone && livro){
+        botao.disabled = false;
+    }else{
+        botao.disabled = true;
+    }
 }
 
+function selecionarLivro(nomeLivro){
+    document.getElementById("livro").value = nomeLivro;
+    validarFormulario();
+}
+
+</script>
 </body>
 </html>
