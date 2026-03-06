@@ -78,11 +78,11 @@
             <!-- CARD 1 -->
             <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://picsum.photos/400/300?fantasy" class="card-img-top" alt="Fantasia">
+                    <img src="" class="card-img-top" alt="Fantasia">
                     <div class="card-body">
                         <h5 class="card-title text-roxo">Reino das Sombras</h5>
                         <p class="card-text">Uma aventura épica repleta de magia, mistérios e batalhas inesquecíveis.</p>
-                        <a href="#" class="btn btn-laranja">Comprar</a>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-roxo">Quarta asa</h5>
                         <p class="card-text">é um romantasy de fantasia com dragões que acompanha Violet Sorrengail, uma jovem forçada por sua mãe general a ingressar na brutal Escola de Guerra Basgiath para se tornar uma cavaleira de dragões.</p>
-                        <a href="#" class="btn btn-laranja">Comprar</a>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-roxo">Se pudesse contar as estralas</h5>
                         <p class="card-text"> uma fantasia cristã inspirada em Peter Pan que segue Alison, uma menina de 9 anos que desperta sem memórias na Terra do Nunca, um refúgio para quem nunca nasceu. Ao descobrir segredos perigosos daquele mundo mágico, ela questiona sua existência e precisa de coragem para encontrar seu próprio destino</p>
-                        <a href="#" class="btn btn-laranja">Comprar</a>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-roxo">Orgulho e Preconceito</h5>
                         <p class="card-text">Narra a história de Elizabeth Bennet, uma jovem espirituosa que enfrenta pressões sociais para casar-se no interior da Inglaterra. Ela desenvolve um intenso preconceito contra o rico e arrogante Sr. Darcy, enquanto sua irmã, Jane, se envolve com o Sr. Bingley. O romance aborda com ironia as convenções de classe, orgulho e amor.</p>
-                        <a href="#" class="btn btn-laranja">Comprar</a>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-roxo">A Lâmina Mais Cortante</h5>
                         <p class="card-text">é uma fantasia cristã que acompanha Anelise Ward, uma escritora londrina transportada através de um portal em seu quarto para o reino mágico de Endemör. Lá, ela precisa usar seu talento para contar histórias para distrair um rei tirano enquanto os rebeldes lutam, enfrentando seus medos.</p>
-                        <a href="#" class="btn btn-laranja">Comprar</a>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -142,21 +142,65 @@
                     <div class="card-body">
                         <h5 class="card-title text-roxo">No Coração da Floresta</h5>
                         <p class="card-text">história de Carey, uma jovem de 15 anos que vive isolada em um trailer na floresta, cuidando de sua irmã mais nova, Jenessa, após o abandono da mãe mentalmente instável. Quando dois estranhos as resgatam, Carey precisa enfrentar os traumas de um passado sombrio e os segredos que esconde de sua nova vida</p>
-                        <a href="#" class="btn btn-laranja">Comprar</a>
+                        <button class="btn btn-laranja w-100" onclick="selecionarLivro('Quarta Asa')">Comprar</button>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="bg-roxo text-white text-center p-3">
-        © 2026 Livraria Roxo & Laranja - Todos os direitos reservados
-    </footer>
+    <!-- FORMULÁRIO -->
+        <section class="container form-section">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card form-card p-4">
+                        <h4 class="text-center text-roxo mb-4">Cadastro para compra</h4>
+                        <form id="formCadastro">
+                            <div class="mb-3">
+                                <label class="form-label">Nome</label>
+                                <input type="text" id="nome" class="form-control" oninput="validarFormulario()">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" id="email" class="form-control" oninput="validarFormulario()">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Telefone</label>
+                                <input type="text" id="telefone" class="form-control" oninput="validarFormulario()">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Livro escolhido</label>
+                                <input type="text" id="livro" class="form-control" readonly>
+                            </div>
+                            <button id="botaoEnviar" class="btn btn-laranja w-100" disabled>Enviar</button>
+                            <footer class="bg-roxo text-white text-center p-3">
+                                © 2026 Livraria Roxo & Laranja - Todos os direitos reservados
+                            </footer>
+                            </div>
+                        </form>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+    
+    function selecionarLivro(nomeLivro){
+        document.getElementById("livro").value = nomeLivro;
+        window.scrollTo({
+            top:document.getElementById("formCadastro").offsetTop,behavior:"smooth"
+        });
+    }
+    
+    function validarFormulario(){
+        let nome = document.getElementById("nome").value;
+        let email = document.getElementById("email").value;
+        let telefone = document.getElementById("telefone").value;
+        let botao = document.getElementById("botaoEnviar");
+        if(nome !== "" && email !== "" && telefone !== ""){
+            botao.disabled = false;
+        }else{
+            botao.disabled = true;
+        }
+}
 
 </body>
 </html>
